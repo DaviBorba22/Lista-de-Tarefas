@@ -21,7 +21,7 @@ body {
 }
 
 
-label { /*Label: utilizado para exibir títulos, rótulos ou descrições de outros elementos da interface*/
+label { 
   display: block;
   margin-bottom: 8px;
   color: white;
