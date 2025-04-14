@@ -1,20 +1,20 @@
-const tarefas = []; //cria uma variável de somente leitura
+const tarefas = []; 
 const input = document.getElementById('novaTarefa');
 const lista = document.getElementById('listaTarefas');
 
 function adicionarTarefa() {
   const texto = input.value.trim();
-  if (texto === '') return; //compara se dois valores são iguais e do mesmo tipo
+  if (texto === '') return; 
 
-  tarefas.push(texto); //Push:  adiciona valores a um array.
+  tarefas.push(texto); 
   input.value = '';
   atualizarLista();
 }
 
-function atualizarLista() { //Executa uma tarefa.
-  lista.innerHTML = ''; //innerHTML: usá-la para obter o conteúdo HTML interno de qualquer elemento HTML.
+function atualizarLista() { 
+  lista.innerHTML = ''; 
 
-  tarefas.forEach((tarefa, index) => { //forEach:  permite percorrer todos os elementos de um array realizando uma ação para cada elemento.
+  tarefas.forEach((tarefa, index) => { 
     const li = document.createElement('li');
 
     const conteudo = document.createElement('div');
